@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="icon" href="assets/icon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Section -->
+        <header>
+            <img src="./assets/profile-picture.png" alt="John Doe's Profile Picture" class="profile-pic">
+            <h1>John Doe</h1>
+            <h4>Software Engineer</h4>
+            <address id="contact-info">
+                <span>San Francisco, CA, 94105</span>
+                <span>|</span>
+                <span><a href="mailto:john.doe@example.com">john.doe@example.com</a></span>
+                <span>|</span>
+                <span>(555) 987-6543</span>
+                <span><a href="https://linkedin.com/in/">LinkedIn</a>&nbsp;|&nbsp;<a href="https://johndoe.dev">Portfolio</a></span>
+            </address>
+        </header>
+
+        
+        <!-- Main Content Section -->
+        <main>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>Stanford University<br>
+                    September 2014 – June 2018</p>
+                    <ul>
+                        <li>Relevant Coursework: Algorithms, Machine Learning, Web Development</li>
+                        <li>Honors: Magna Cum Laude, Dean's List</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>Certification in Cloud Computing</h3>
+                    <p>Udacity<br>
+                    January 2019 – June 2019</p>
+                    <ul>
+                        <li>Relevant Coursework: Cloud Architecture, DevOps, Serverless Computing</li>
+                        <li>Certification ID: 9876543210</li>
+                    </ul>
+                </div>
+            </section>
+        
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Technical Skills:</strong> JavaScript, Python, Java, SQL</li>
+                    <li><strong>Soft Skills:</strong> Problem-Solving, Communication, Teamwork</li>
+                    <li><strong>Languages:</strong> English (Native), French (Intermediate)</li>
+                    <li><strong>Tools/Software:</strong> Git, Docker, AWS, Visual Studio Code</li>
+                </ul>
+            </section>
+        
+            <!-- Work Experience Section -->
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div class="entry">
+                    <h3>Software Engineer</h3>
+                    <p>Innovative Tech Solutions, San Francisco, CA<br>
+                    July 2018 – Present</p>
+                    <ul>
+                        <li>Designed and developed scalable web applications using JavaScript and Python.</li>
+                        <li>Implemented and maintained RESTful APIs for various services.</li>
+                        <li>Collaborated with product managers and designers to create user-centric solutions.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>Software Engineering Intern</h3>
+                    <p>Tech Innovations, San Francisco, CA<br>
+                    June 2017 – August 2017</p>
+                    <ul>
+                        <li>Assisted in developing and testing new features for the company's main product.</li>
+                        <li>Conducted code reviews and contributed to debugging and optimization.</li>
+                        <li>Documented technical processes and provided user support.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <button id="toggle-skills">Toggle Skills</button>
+
+        </main>
+
+
+
+
+
+
+        <!-- Footer Section -->
+        <!-- <footer>
+            <p></p>
+        </footer> -->
+    </div>
+
+    <script type="module" src="dist/main.js"></script>
+
+</body>
+
+</html>
