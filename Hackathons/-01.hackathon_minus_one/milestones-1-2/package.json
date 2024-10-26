@@ -13,6 +13,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "http-server": "^14.1.1",
     "typescript": "^5.5.4"
   }
