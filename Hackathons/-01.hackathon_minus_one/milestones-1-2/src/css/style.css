@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #333;
+    --primary-hover: #444;
+    --secondary-color: #fff;
+    --accent-color: #004794;
+    --background-color: #f4f4f4;
+    --header-font-size: 2em;
+    --body-font-family: Arial, sans-serif;
+    --border-radius: 8px;
+    --padding: 20px;
+    --margin: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font-family);
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.profile-pic {
+    background: var(--secondary-color);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--header-font-size);
+}
+
+header h4 {
+    font-size: 17px;
+}
+
+#contact-info {
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color:  var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: var(--margin);
+    padding: var(--padding);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: var(--margin);
+}
+
+.entry {
+    margin-bottom: var(--margin);
+}
+
+.entry h3 {
+    margin: 0;
+}
+
+.entry ul, #skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+
+/* Button */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    color:var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsive design */
+@media (max-width: 600px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}

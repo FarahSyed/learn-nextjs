@@ -1,0 +1,19 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && xcopy /E /I dist\\js public\\js && xcopy /E /I src\\css public\\css && xcopy /E /I src\\assets public\\assets",
+    "postbuild": "echo Copying static files... && xcopy /E /I src\\static public\\static",
+    "start": "npx http-server public",
+    "deploy": "vercel --prod"
+  },
+  "author": "Farah Syed",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.5.4"
+  }
+}

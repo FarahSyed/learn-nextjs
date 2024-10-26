@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/static-resume", "dest": "/milestones-1-2/public/index.html" }
+  ],
+  "builds": [
+    {
+      "src": "/milestones-1-2/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "/milestones-1-2/public"
+      }
+    }
+  ]
+}
