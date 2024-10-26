@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && copyfiles -u 1 src/css/**/* public/ && copyfiles -u 1 src/assets/**/* public/assets && copyfiles -u 1 dist/js/**/* public/",
+    "build": "tsc && mkdirp public && copyfiles -u 1 src/index.html public/ && copyfiles -u 1 src/css/**/* public/ && copyfiles -u 1 src/assets/**/* public/ && copyfiles -u 1 src/js/**/* public/",
     "postbuild": "echo Copying static files... && copyfiles -u 1 src/static/**/* public/static",
     "start": "npx http-server public",
     "deploy": "vercel --prod"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "http-server": "^14.1.1",
+    "mkdirp": "^3.0.1",
     "typescript": "^5.5.4"
   }
 }

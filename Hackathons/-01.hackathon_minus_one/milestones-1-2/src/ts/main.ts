@@ -4,6 +4,8 @@ const toggleSkills = () => {
   if (skillsSection) {
       if (skillsSection.style.display === 'none') {
           skillsSection.style.display = 'block';
+          console.log("Display block");
+          
       } else {
           skillsSection.style.display = 'none';
       }
