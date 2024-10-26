@@ -5,10 +5,10 @@
   ],
   "builds": [
     {
-      "src": "/milestones-1-2/package.json",
+      "src": "milestones-1-2/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "/milestones-1-2/public"
+        "distDir": "milestones-1-2/public"
       }
     }
   ]
